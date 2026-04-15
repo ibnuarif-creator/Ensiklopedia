@@ -6,140 +6,353 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Ensiklopedia Digital Motif Tenun Melayu — Jelajahi warisan budaya leluhur dan temukan filosofi mendalam di setiap helai kain tradisional nusantara.">
-    <title>Kamus Tenun Melayu | Beranda</title>
+    <title>Ensiklopedia Tenun Melayu | Beranda</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Cormorant+Garamond:ital,wght@1,400;1,500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <h1>Ensiklopedia Tenun Melayu</h1>
-        <blockquote class="header-quote">
-            "Benang emas ditenun rapi, Menjadi songket indah sekali,<br>
-            Pucuk rebung hiasan hati, Adat Melayu takkan mati."
-        </blockquote>
-        <p>Eksplorasi makna filosofis mendalam di balik ragam hias kain budaya peradaban nusantara.</p>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand">
+                <span class="nav-ornament">✦</span>
+                <span class="nav-title">Tenun Melayu</span>
+                <span class="nav-ornament">✦</span>
+            </a>
+            <div class="nav-links">
+                <a href="#koleksi" class="nav-link">Koleksi</a>
+                <a href="#tentang" class="nav-link">Tentang</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero" id="beranda">
+        <div class="hero-pattern"></div>
+        <div class="hero-glow-left"></div>
+        <div class="hero-glow-right"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                Warisan Budaya Nusantara
+            </div>
+
+            <!-- GAYA JUDUL DIKEMBALIKAN KE SEPERTI SEBELUMNYA -->
+            <h1 class="hero-title-classic reveal">
+                Ensiklopedia Tenun Melayu
+            </h1>
+
+            <blockquote class="hero-quote reveal">
+                "Benang emas ditenun rapi, Menjadi songket indah sekali,<br>
+                Pucuk rebung hiasan hati, Adat Melayu takkan mati."
+            </blockquote>
+
+            <p class="hero-subtitle reveal">
+                Eksplorasi makna filosofis mendalam di balik ragam hias kain<br class="hide-mobile">
+                peradaban nusantara yang kaya makna dan kearifan lokal.
+            </p>
+
+            <a href="#koleksi" class="hero-cta reveal" id="cta-explore">
+                Jelajahi Koleksi
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </a>
+        </div>
+
+        <div class="hero-scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
     </header>
 
-    <main>
+    <!-- KOLEKSI SECTION -->
+    <main id="koleksi">
+        <div class="section-header reveal">
+            <div class="section-label">Ragam Hias</div>
+            <h2 class="section-title">Koleksi Motif</h2>
+            <p class="section-subtitle">Sembilan motif tenun yang masing-masing menyimpan kearifan dan nilai luhur
+                budaya Melayu</p>
+            <div class="section-divider">
+                <span class="divider-ornament">◆</span>
+            </div>
+        </div>
+
         <div class="grid-container">
+
             <!-- Card 1 -->
-            <article class="card">
+            <article class="card reveal" id="card-pucuk-rebung">
+                <div class="card-number">01</div>
                 <div class="card-image">
                     <img src="assets/pucuk-rebung.png" alt="Motif Pucuk Rebung">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
-                    <h2 class="card-title">Motif Pucuk Rebung</h2>
+                    <div class="card-tag">Motif Flora</div>
+                    <h2 class="card-title">Pucuk Rebung</h2>
                     <p class="card-description">Pola segitiga bambu yang melambangkan kekuatan hati serta proses
                         ketahanan manusia mengejar kualitas luhur layaknya tunas yang tumbuh.</p>
-                    <a href="pucuk-rebung.html" class="card-button">Baca Selengkapnya</a>
+                    <a href="pucuk-rebung.html" class="card-button" id="btn-pucuk-rebung">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 2 -->
-            <article class="card">
+            <article class="card reveal" id="card-awan-larat">
+                <div class="card-number">02</div>
                 <div class="card-image">
                     <img src="assets/awan-larat.png" alt="Motif Awan Larat">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
-                    <h2 class="card-title">Motif Awan Larat</h2>
+                    <div class="card-tag">Motif Alam</div>
+                    <h2 class="card-title">Awan Larat</h2>
                     <p class="card-description">Corak awan yang berarak tenang, merepresentasikan kelembutan hati,
                         kesopanan yang luhur, dan keluwesan dalam menjaga adat budaya.</p>
-                    <a href="awan-larat.html" class="card-button">Baca Selengkapnya</a>
+                    <a href="awan-larat.html" class="card-button" id="btn-awan-larat">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 3 -->
-            <article class="card">
+            <article class="card reveal" id="card-corak-insang">
+                <div class="card-number">03</div>
                 <div class="card-image">
                     <img src="assets/pucuk-rebung.png" alt="Motif Corak Insang">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
-                    <h2 class="card-title">Motif Corak Insang</h2>
+                    <div class="card-tag">Motif Pesisir</div>
+                    <h2 class="card-title">Corak Insang</h2>
                     <p class="card-description">Kain tradisional pesisir Kota Pontianak, menyadur lekuk insang ikan
                         sebagai representasi masyarakat bernafas di tepian muara sungai.</p>
-                    <a href="corak-insang.html" class="card-button">Baca Selengkapnya</a>
+                    <a href="corak-insang.html" class="card-button" id="btn-corak-insang">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 4 -->
-            <article class="card">
+            <article class="card reveal" id="card-tampuk-manggis">
+                <div class="card-number">04</div>
                 <div class="card-image">
                     <img src="assets/awan-larat.png" alt="Motif Tampuk Manggis">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
+                    <div class="card-tag">Motif Flora</div>
                     <h2 class="card-title">Tampuk Manggis</h2>
                     <p class="card-description">Membawa filosofi kebaikan hati dari buah manggis, bahwa kondisi dari
                         rupa luar mapun isi dalam menyimpan kejujuran manis yang abadi.</p>
-                    <a href="#" class="card-button">Baca Selengkapnya</a>
+                    <a href="#" class="card-button" id="btn-tampuk-manggis">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 5 -->
-            <article class="card">
+            <article class="card reveal" id="card-siku-keluang">
+                <div class="card-number">05</div>
                 <div class="card-image">
                     <img src="assets/pucuk-rebung.png" alt="Motif Siku Keluang">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
+                    <div class="card-tag">Motif Fauna</div>
                     <h2 class="card-title">Siku Keluang</h2>
                     <p class="card-description">Terinspirasi sayap kelelawar patah, menjiwai pemaknaan kepribadian jujur
                         dan keberanian pemimpin pelindung keselamatan satu negeri.</p>
-                    <a href="#" class="card-button">Baca Selengkapnya</a>
+                    <a href="#" class="card-button" id="btn-siku-keluang">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 6 -->
-            <article class="card">
+            <article class="card reveal" id="card-bunga-berantai">
+                <div class="card-number">06</div>
                 <div class="card-image">
                     <img src="assets/awan-larat.png" alt="Motif Bunga Berantai">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
+                    <div class="card-tag">Motif Flora</div>
                     <h2 class="card-title">Bunga Berantai</h2>
                     <p class="card-description">Susunan flora bunga jalin-menjalin menyiratkan ikatan persaudaraan nan
                         erat dan toleransi antar sesama menuju kehidupan sejahtera.</p>
-                    <a href="#" class="card-button">Baca Selengkapnya</a>
+                    <a href="#" class="card-button" id="btn-bunga-berantai">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 7 -->
-            <article class="card">
+            <article class="card reveal" id="card-itik-pulang-petang">
+                <div class="card-number">07</div>
                 <div class="card-image">
                     <img src="assets/pucuk-rebung.png" alt="Motif Itik Pulang Petang">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
+                    <div class="card-tag">Motif Fauna</div>
                     <h2 class="card-title">Itik Pulang Petang</h2>
                     <p class="card-description">Tarian barisan berjalan rapi sejajar itik, merujuk kepada sistem nilai
                         kedisiplinan beramai di tengah kemajemukan suku bermasyarakat.</p>
-                    <a href="#" class="card-button">Baca Selengkapnya</a>
+                    <a href="#" class="card-button" id="btn-itik-pulang-petang">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 8 -->
-            <article class="card">
+            <article class="card reveal" id="card-lebah-bergantung">
+                <div class="card-number">08</div>
                 <div class="card-image">
                     <img src="assets/awan-larat.png" alt="Motif Lebah Bergantung">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
+                    <div class="card-tag">Motif Fauna</div>
                     <h2 class="card-title">Lebah Bergantung</h2>
                     <p class="card-description">Metafora abadi dari koloni sarang lebah madu, penghormatan kepada
                         pahlawan ilmu dan insan pemberi manfaat murni tanpa pamrih.</p>
-                    <a href="#" class="card-button">Baca Selengkapnya</a>
+                    <a href="#" class="card-button" id="btn-lebah-bergantung">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
 
             <!-- Card 9 -->
-            <article class="card">
+            <article class="card reveal" id="card-kembang-semangkok">
+                <div class="card-number">09</div>
                 <div class="card-image">
                     <img src="assets/pucuk-rebung.png" alt="Motif Kembang Semangkok">
+                    <div class="card-image-overlay"></div>
                 </div>
                 <div class="card-content">
+                    <div class="card-tag">Motif Flora</div>
                     <h2 class="card-title">Kembang Semangkok</h2>
                     <p class="card-description">Melambangkan kelapangan ruang di sebuah wadah, menyimpan pedoman hidup
                         ikhlas bergotong royong di lintas perbedaan kebudayaan.</p>
-                    <a href="#" class="card-button">Baca Selengkapnya</a>
+                    <a href="#" class="card-button" id="btn-kembang-semangkok">
+                        Baca Selengkapnya
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
                 </div>
             </article>
+
         </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="tentang">
+        <div class="footer-ornament-line">
+            <div class="footer-diamond">◆</div>
+        </div>
+        <p class="footer-tagline">
+            "Di mana bumi dipijak, di situ langit dijunjung."
+        </p>
+        <p class="footer-copy">
+            Ensiklopedia Tenun Melayu &nbsp;·&nbsp; Melestarikan Budaya Nusantara
+        </p>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    // Stagger animation for cards
+                    const delay = entry.target.closest('.card')
+                        ? (Array.from(document.querySelectorAll('.card')).indexOf(entry.target.closest('.card')) % 3) * 100
+                        : 0;
+                    setTimeout(() => {
+                        entry.target.classList.add('revealed');
+                    }, delay);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealElements.forEach(el => observer.observe(el));
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+
 </body>
 
 </html>

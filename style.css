@@ -288,6 +288,30 @@ body::before {
     background-clip: text;
 }
 
+/* Classic Title (reverting exact element style requested) */
+.hero-title-classic {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2.2rem;
+    position: relative;
+    display: inline-block;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+}
+
+.hero-title-classic::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 3px;
+    background-color: var(--gold);
+}
+
 /* Pantun / Quote */
 .hero-quote {
     font-family: 'Cormorant Garamond', serif;
